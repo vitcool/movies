@@ -1,0 +1,14 @@
+.expanded-movie-item {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.expanded-movie-item h4 {
+  display: inline;
+}
+
+.expanded-movie-item  > .description {
+  display: flex;
+  flex-direction: column;
+}

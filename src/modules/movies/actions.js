@@ -1,5 +1,5 @@
-import {FETCH_MOVIES} from '../../actionTypes'
-import topRatedMovies from '../mocks/topTatedMovies'
+import { FETCH_MOVIES } from './actionTypes'
+import topRatedMovies from '../../mocks/topTatedMovies.json'
 
 export function fetchTopRatedMovies() {
   return {

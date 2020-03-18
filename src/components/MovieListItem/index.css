@@ -1,0 +1,7 @@
+.movie-list-item {
+  cursor: pointer;
+}
+
+.movie-list-item.selected {
+  text-decoration: underline;
+}

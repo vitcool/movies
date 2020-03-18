@@ -1,0 +1,10 @@
+.movies-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.movies-list > .items {
+  width: 20%;
+}
+
