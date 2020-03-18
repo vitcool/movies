@@ -1,22 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import TMDBImage from '../TMDBImage'
-
 import './index.css';
 
 const ExpandedMovieItem = ({
   movie: {
     title,
     original_title,
-    poster_path,
     overview,
     vote_average,
     vote_count,
   },
 }) => (
   <div className="expanded-movie-item">
-    <TMDBImage src={poster_path} className="poster" />
     <div className="description">
       <h2>
         {title}({original_title})

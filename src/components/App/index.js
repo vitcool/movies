@@ -3,8 +3,9 @@ import { createStore, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 
-import rootReducer from '../modules'
-import MovieLibrary from '../components/MovieLibrary';
+import rootReducer from '../../modules'
+import MovieLibrary from '../MovieLibrary'
+import ModalProvider from '../Modal/ModalProvider'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
@@ -14,7 +15,9 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <MovieLibrary />
+        <ModalProvider>
+          <MovieLibrary />
+        </ModalProvider>
       </Provider>
     )
   }

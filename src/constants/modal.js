@@ -1,0 +1,3 @@
+export const MODAL_CONTENTS = {
+  MOVIE_DETAILS: 'MOVIE_DETAILS'
+}

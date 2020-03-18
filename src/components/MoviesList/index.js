@@ -27,14 +27,16 @@ class MoviesList extends PureComponent {
             <span>Sort by:</span>
             <SortingOptions onChange={this.handleSortingChange} />
           </div>
-          {movies.map(movie => (
-            <MovieListItem
-              key={movie.id}
-              movie={movie}
-              isSelected={selectedMovie === movie}
-              onSelect={this.handleSelectMovie}
-            />
-          ))}
+          <div className="movies-list-wrapper">
+            {movies.map(movie => (
+              <MovieListItem
+                key={movie.id}
+                movie={movie}
+                isSelected={selectedMovie === movie}
+                onSelect={this.handleSelectMovie}
+              />
+            ))}
+          </div>
         </div>
         {selectedMovie && <ExpandedMovieItem movie={selectedMovie} />}
       </div>
