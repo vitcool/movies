@@ -4,17 +4,20 @@ import {
 } from './actionTypes'
 
 const initialState = {
-  movies: []
+  movies: [],
+  totalPages: 0,
+  error: ''
 }
 
 export default function movies(state = initialState, action) {
   const { type, payload } = action
   switch (type) {
     case FETCH_MOVIES_SUCCESS: {
-      const { results } = payload
+      const { results, total_pages } = payload
       return {
         ...state,
-        movies: results || []
+        movies: [...state.movies, ...results],
+        totalPages: total_pages
       }
     }
 

@@ -28,6 +28,9 @@
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: slategray;
+  background-position: center;
+  background-size: cover;
 }
 
 .list-item-wrapper:hover {
@@ -64,4 +67,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .list-item-wrapper {
+    width: 375px;
+    height: 562.5px;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .list-item-wrapper {
+    width: 375px;
+    height: 562.5px;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .list-item-wrapper {
+    width: 500px;
+    height: 750px;
+  }
 }

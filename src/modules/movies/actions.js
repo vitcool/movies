@@ -2,9 +2,9 @@
 import { FETCH_MOVIES_SUCCESS, FETCH_MOVIES_FAILED } from './actionTypes'
 import { getNowPlayingMovies } from '../../api/movieApi'
 
-export function fetchNowPlaying() {
+export function fetchNowPlaying({ page }) {
   return function (dispatch) {
-    return getNowPlayingMovies().then(response => {
+    return getNowPlayingMovies({ page }).then(response => {
       const { status_code, status_message } = response;
       if (status_code) {
         return dispatch({
