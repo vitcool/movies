@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
-import SortingOptions from '../SortingOptions'
+// import SortingOptions from '../SortingOptions'
 import MovieListItem from '../MovieListItem'
 import ExpandedMovieItem from '../ExpandedMovieItem'
 
@@ -23,10 +23,6 @@ class MoviesList extends PureComponent {
     return (
       <div className="movies-list">
         <div className="items">
-          <div>
-            <span>Sort by:</span>
-            <SortingOptions onChange={this.handleSortingChange} />
-          </div>
           <div className="movies-list-wrapper">
             {movies.map(movie => (
               <MovieListItem

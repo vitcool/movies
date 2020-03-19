@@ -23,6 +23,16 @@
 }
 
 @keyframes ML-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(720deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+.error-message {
+  font-size: 12px;
+  margin-top: 10px;
+  color: red;
 }

@@ -8,9 +8,8 @@
 
 .movie-info-wrapper {
   display: none;
-  height: 95%;
-  width: 95%;
-  margin: 10px;
+  height: 100%;
+  width: 100%;
   background-color: rgba(204, 217, 255, 0.7);
   cursor: pointer;
   border-radius: 20px;
